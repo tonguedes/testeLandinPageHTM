@@ -1,0 +1,602 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    background-color: #000;
+    padding: 0;
+}
+
+.navbar {
+    opacity: 0.8;
+}
+
+/* Seção 1 */
+#secao-1 {
+    background-image: url(../img/Camada\ 2.png);
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+}
+
+#secao-1>div>div>p {
+    color: #dac470;
+    text-transform: uppercase;
+    font-size: 30px;
+
+}
+
+#secao-1>div>div>div:nth-child(1)>ul>li:nth-child(1),
+#secao-1>div>div>div:nth-child(1)>ul>li:nth-child(2),
+#secao-1>div>div>div:nth-child(1)>ul>li:nth-child(4) {
+    color: #FFF;
+}
+
+#secao-1>div>div>p {
+    text-transform: uppercase;
+    color: goldenrod;
+    font-size: 30px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+#showFormButton\ \ btn-3 {
+    width: 80%;
+    max-width: 300px;
+    text-transform: uppercase;
+    height: 70px;
+    background-color: #419a5b;
+    color: #FFF;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+
+#showFormButton\ btn-3 {
+    width: 80%;
+    max-width: 300px;
+    text-transform: uppercase;
+    height: 70px;
+    background-color: #419a5b;
+    color: #FFF;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#showFormButton\ btn-4,
+#showFormButton\ btn-2,
+#showFormButton\ btn-1 {
+    width: 80%;
+    max-width: 300px;
+    text-transform: uppercase;
+    height: 70px;
+    background-color: #419a5b;
+    color: #FFF;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Navbar */
+.navbar-inner {
+    background-color: transparent;
+}
+
+/* Seção 2 */
+#secao-2 {
+    background-image: url(../../assets/img/Light.png);
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+/* titulo parte 2 */
+#secao-2>p {
+    text-transform: uppercase;
+    color: goldenrod;
+    font-size: 30px;
+
+}
+
+
+/* efeito secao-2 */
+
+.timeline {
+    position: relative;
+    padding: 50px 0;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background-color: #d4af37;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.timeline-dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #d4af37;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.timeline-content {
+    padding: 20px;
+    border-radius: 8px;
+
+}
+
+.left {
+    text-align: right;
+    padding-right: 30px;
+}
+
+.right {
+    text-align: left;
+    padding-left: 30px;
+}
+
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-dot {
+        left: 20px;
+    }
+
+    .left,
+    .right {
+        text-align: left;
+        padding: 10px 20px;
+    }
+}
+
+
+
+/* fim do efeito */
+
+/* Estilo para dispositivos móveis efeitos secao-2 */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 10%;
+    }
+
+    .timeline-step .content {
+        width: 70%;
+        left: 10%;
+    }
+
+    .timeline-step::before {
+        left: 10%;
+        transform: translateX(5);
+    }
+
+
+    #secao-5>div>div>div.col-12.col-md-6.img-fluid>img {
+        width: 300px;
+        height: 300px;
+        margin-left: 6%;
+    }
+
+
+}
+
+
+
+/* Seção 3 */
+#secao-3 {
+
+    padding: 20px;
+    text-align: center;
+}
+
+
+.box {
+    background-color: black;
+    max-width: 700px !important;
+    border-radius: 10px;
+    /* Ajuste o tamanho máximo */
+    margin: 10px auto;
+    /* Centraliza horizontalmente */
+}
+
+
+.card-title {
+    font-size: 18px;
+}
+
+#secao-3>p {
+    text-transform: uppercase;
+    color: goldenrod;
+    font-size: 20px;
+}
+
+#secao-3>div:nth-child(4)>p {
+    color: #FFF
+}
+
+/* Seção 4 */
+#secao-4 {
+    background-color: #000;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+#secao-4>p {
+    text-transform: uppercase;
+    color: goldenrod;
+    font-size: 28px;
+
+}
+
+.box {
+    border: 2px solid yellow;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+
+}
+
+/* 
+textos do card-4 */
+
+#card-text>div>div:nth-child(1)>div>div>p {
+    font-size: 18px;
+}
+
+#card-text>div>div:nth-child(2)>div>div>p {
+    font-size: 18px;
+}
+
+#card-text>div>div:nth-child(3)>div>div>p {
+    font-size: 18px;
+}
+
+#card-text>div>div:nth-child(4)>div>div>p {
+    font-size: 18px;
+}
+
+/* Seção 5 */
+#secao-5 {
+    background-image: url(/HPM_novo2/HPM_novo/assets/img/Camada\ 2.png);
+    min-height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#secao-5>div>div>div:nth-child(1)>p:nth-child(3) {
+    font-size: 26px;
+}
+
+#secao-5>div>div>div:nth-child(1)>h1 {
+    color: #d4af37;
+    font-size: 30px;
+    margin-top: 10%;
+
+}
+
+#secao-5>div>div>div:nth-child(1)>p:nth-child(3),
+#secao-5>div>div>div:nth-child(1)>p:nth-child(5) {
+    color: #FFF;
+}
+
+#secao-5>div>div>div:nth-child(1)>p:nth-child(5) {
+    color: #FFF;
+}
+
+/* texto preenche requisitos 5 parte */
+#secao-1>div>div>div:nth-child(1)>p:nth-child(4) {
+    color: #FFF;
+
+}
+
+/* texto protecao de dados  5 parte */
+#secao-1>div>div>div:nth-child(1)>p:nth-child(6) {
+    color: #FFF;
+}
+
+
+/* linhas gradientes css para a pagina */
+.gradient-line-top {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #ff6f61, #ffde59, #ff6f61, transparent);
+    border: none;
+    margin-top: -5%;
+    width: 300px;
+}
+
+.gradient-line {
+    height: 2px;
+    background: linear-gradient(to right, transparent, #ff6f61, #ffde59, #ff6f61, transparent);
+    border: none;
+    margin-top: -5%;
+}
+
+/* final da linha gradiente */
+
+
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    #showFormButton {
+        height: 60px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    #secao-1 {
+        min-height: 100vh;
+    }
+
+    #showFormButton\ \ btn-3 {
+        width: 90%;
+        height: 50px;
+        font-size: 14px;
+        margin-left: 10% !important;
+        width: 80%;
+        text-transform: uppercase;
+        height: 70px;
+        background-color: #419a5b;
+        color: #FFF;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    #showFormButton\ \ btn-2 {
+        width: 90%;
+        height: 50px;
+        font-size: 14px;
+        margin-left: 10% !important;
+        width: 80%;
+        text-transform: uppercase;
+        height: 70px;
+        background-color: #419a5b;
+        color: #FFF;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    #showFormButton\ \ btn-1 {
+        width: 100%;
+        height: 50px;
+        font-size: 14px;
+        text-transform: uppercase;
+        height: 70px;
+        background-color: #419a5b;
+        color: #FFF;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        margin-left: 20% !important;
+        transition: transform 0.3s ease;
+    }
+
+}
+
+#secao-5>div>div>div:nth-child(1)>h1 {
+    font-size: 22px;
+
+}
+
+#secao-3 {
+    min-height: 50%;
+}
+
+
+.card {
+    padding: 10px;
+    font-size: 14px;
+    width: 90%;
+    /* Ajuste conforme necessário */
+    margin: 10px auto;
+}
+
+.card p {
+    font-size: 12px;
+}
+
+@media (max-width: 480px) {
+    #showFormButton {
+        height: 45px;
+        font-size: 12px;
+        margin-left: 4%;
+    }
+
+    #secao-2>h2 {
+        font-size: 15px;
+    }
+
+
+    #container-1>div>div.col-12.col-md-6.img-fluid>div>img {
+        width: 340px;
+        height: 300px;
+        align-items: center;
+        object-fit: cover;
+    }
+
+
+    #linha-1 {
+        margin-top: 20% !important;
+    }
+
+
+    #secao-5>div>div>div:nth-child(1)>p:nth-child(3) {
+        font-size: 22px;
+    }
+
+    body>div>h2 {
+        font-size: 17px;
+    }
+
+    #container-1>div>div:nth-child(1)>h1 {
+        font-size: 20px !important;
+    }
+
+    /* textos da seção -2 */
+    body>div>div>div:nth-child(1)>div.col-md-5.left>div>p {
+        font-size: 15px;
+        margin-left: 6%;
+    }
+
+    body>div>div>div:nth-child(1)>div.col-md-5.left>div>h4 {
+        margin-left: 6%;
+    }
+
+    body>div>div>div:nth-child(2)>div.col-md-5.right>div>p {
+        font-size: 15px;
+        margin-left: 6%;
+    }
+
+    body>div>div>div:nth-child(2)>div.col-md-5.right>div>h4 {
+        margin-left: 6%;
+    }
+
+    .timeline-dot {
+        margin-left: -1%;
+    }
+
+    .timeline-item {
+        margin-left: 1%;
+    }
+
+    /* fim dos textos da secao-2 */
+
+    #text-monetize {
+        font-size: 15px;
+    }
+
+    .card {
+        padding: 10px;
+        font-size: 14px;
+        width: 90%;
+        /* Ajuste conforme necessário */
+        margin: 10px auto;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+
+    #tamanho-mobile {
+        width: 400px;
+        height: 190px;
+    }
+
+    /* font-size texto-2 */
+
+
+    #secao-5>div>div>div:nth-child(1)>h1 {
+        font-size: 20px !important;
+        text-align: center;
+    }
+
+    /* titulo secao-2o-2 */
+    #secao-2>p {
+        font-size: 22px;
+    }
+
+    #secao-3>p {
+        font-size: 22px;
+    }
+
+    /* titulo secao-4 */
+    #secao-4>p {
+        font-size: 22px;
+    }
+
+    #secao-3>p {
+        font-size: 15px !important;
+    }
+
+    #secao-4>p {
+        font-size: 15px !important;
+    }
+
+
+
+    #secao-1>div>div>div:nth-child(1)>h1 {
+        font-size: 22px;
+    }
+
+    #showFormButton {
+        font-size: 20px;
+        margin-left: 7% !important;
+    }
+
+    #secao-1 {
+        height: -100vh !important;
+    }
+
+
+    #secao-5>div:nth-child(1)>div>div:nth-child(1)>p:nth-child(6) {
+        margin-left: 6%;
+    }
+
+
+}
+
+@media (max-width: 360px) {
+    #showFormButton {
+        font-size: 10px;
+        height: 40px;
+    }
+}
