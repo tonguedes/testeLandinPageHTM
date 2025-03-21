@@ -466,11 +466,13 @@ textos do card-4 */
 
 
     #container-1>div>div.col-12.col-md-6.img-fluid>div>img {
-        width: 340px;
-        height: 300px;
+        width: 240px;
+        height: 200px;
         align-items: center;
-        object-fit: cover;
+       
     }
+
+        
 
 
     #linha-1 {
@@ -599,4 +601,11 @@ textos do card-4 */
         font-size: 10px;
         height: 40px;
     }
+
+         #container-1>div>div.col-12.col-md-6.img-fluid>div>img {
+             width: 240px;
+             height: 200px;
+             align-items: center;
+    
+         }
 }
