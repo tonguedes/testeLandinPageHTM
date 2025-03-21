@@ -465,13 +465,12 @@ textos do card-4 */
     }
 
 
-    #container-1>div>div.col-12.col-md-6.img-fluid>div>img {
-        width: 240px;
-        height: 200px;
+  #container-1>div>div.col-12.col-md-6.img-fluid>div>img {
+        width: 340px;
+        height: 300px;
         align-items: center;
-       
-    }
 
+    }
         
 
 
