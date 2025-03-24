@@ -11,11 +11,28 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
+<style>
+  .carousel {
+    display: none;
+  }
+
+  @media (max-width: 790px) {
+    .carousel {
+      display: block;
+      text-align: center;
+    }
+
+    .team {
+      display: none;
+    }
+  }
+</style>
+
 <body>
 
   <nav class="navbar navbar-inner">
     <div class="container">
-      <a class="navbar-brand navbar-light bg-transparent" href="#">
+      <a class="navbar-brand navbar-light bg-transparent" href="#"  style="background-color: rgba(0, 0, 0, 0.5);">
         <img src="/HPM_novo2/HPM_novo/assets/img/HPM-LOGO-OK.png" alt="Bootstrap" width="120" height="50">
       </a>
     </div>
@@ -32,23 +49,23 @@
           </h1><br>
 
           <ul class="list-unstyled">
-            <li id="text-monetize"><span style="color:#d4af37; font-size: 30px;">✓</span>
+            <li id="text-monetize "><span style="color:#d4af37; font-size: 30px;">✓</span>
               Você precisa estar a mais de 5 anos na sua área;
-
             </li>
-            <li id="text-monetize"><span style="color:#d4af37; font-size: 30px;">✓</span> Necessário ter resultados
+
+
+
+            <li id="text-monetize " style="color:#FFF"><span style="color:#d4af37; font-size: 30px;">✓</span> Necessário
+              ter resultados
               acima da média;</li>
-            <div class="container">
-              <hr class="gradient-line-top my-2">
-            </div>
-            <li id="text-monetize"><span style="color:#d4af37; font-size: 30px;">✓</span>Disponibilizar capital para
+
+            <li id="text-monetize" style="color:#FFF"><span
+                style="color:#d4af37; font-size: 30px;">✓</span>Disponibilizar capital para
               investimento a
               partir de R$
               5 mil.
             </li>
-            <div class="container">
-              <hr class="gradient-line-top my-2">
-            </div>
+
           </ul>
 
           <p>
@@ -56,9 +73,10 @@
             toque<br> no botão abaixo e preencha nosso formulário
           </p>
 
-          <button id="showFormButton btn-1" class="btn btn-custom ">quero aplicar agora
+          <button id="showFormButton btn-1" class="btn btn-custom btn-smaller" type="button" class="btn btn-primary"
+            data-bs-toggle="modal" data-bs-target="#formModal">quero aplicar agora
           </button>
-          <p style="margin-top: 10px;"> <i class="bi bi-lock-fill" style="color: goldenrod;"></i>seus dados estarão
+          <p style="margin-top: 10px; font-size: 14px;"> <i class="bi bi-lock-fill" style="color: goldenrod;"></i>seus dados estarão
             seguros e 100% protegidos</p>
         </div>
 
@@ -78,6 +96,37 @@
       </div>
     </div>
   </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-black" id="formModalLabel">Torne-se um<br> Franqueado de <span
+              style="color: red;">Sucesso</span> </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Digite seu nome" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Digite seu e-mail" required>
+            </div>
+            <div class="mb-3">
+              <input type="tel" class="form-control" placeholder="Digite seu telefone" required>
+            </div>
+            <button type="submit" class="btn btn-success btn-smaller ">FALE COM UM CONSULTOR</button>
+          </form>
+          <p class="text-muted mt-3" style="font-size: 12px;">
+            Ao enviar os dados acima, eu concordo em receber contatos e mensagens por meio do WhatsApp,
+            Telefones e E-mails.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <section class="container " id="secao-2">
 
@@ -117,85 +166,186 @@
               pronto para escalar no digital.
               Clientes chegando todos os dias, automação e escala para crescer com liberdade e alta
               lucratividade.
-              Com o Método HPM, você vende seu conhecimento de forma estratégica.</p>
+              Com o Método HPM, você vende seu conhecimento de forma estratégica.</p><br>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-<section id="secao-3" class=" py-4">
-  <p class="text-center fs-4" >Temos um método com pilares estratégicos</p>
+  <section id="secao-3" class=" py-4">
+    <p class="text-center fs-4">Temos um método com pilares estratégicos</p>
 
-  <div class="container">
-    <div class="row justify-content-center gap-2" id="cards-3">
-      <!-- Card 1 -->
-      <div class="col-5 col-md-5 col-lg-2">
-        <div class="card border-warning text-white bg-black card-small">
-          <div class="card-header border-warning  text-dark fw-bold p-2" style="background-color: #d4af37;">PILAR 1:</div>
-          <div class="card-body p-2">
-            <h6 class="card-title">POSICIONAMENTO </h6><br><br>
-            <p class="card-text small">Defina sua persona,sua promessa e se torne referência no seu nicho..</p>
+    <div id="team" class="team">
+
+      <div class="container">
+        <div class="row justify-content-center gap-2" id="cards-3">
+          <!-- Card 1 -->
+
+          <div class="col-5 col-md-5 col-lg-2">
+            <div class="card border-warning text-white bg-black card-small">
+              <div class="card-header border-warning  text-dark fw-bold p-2" style="background-color: #d4af37;">PILAR
+                1:
+              </div>
+              <div class="card-body p-2">
+                <h6 class="card-title">POSICIONAMENTO </h6><br><br>
+                <p class="card-text small">Defina sua persona,sua promessa e se torne referência no seu nicho..</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-5 col-md-5 col-lg-2">
+            <div class="card border-warning text-white bg-black card-small">
+              <div class="card-header border-warning  text-dark fw-bold p-2" style="background-color: #d4af37;">PILAR
+                2:
+              </div>
+              <div class="card-body p-2">
+                <h6 class="card-title">OFERTA IRRESISTÍVEL</h6><br>
+                <p class="card-text small">Transforme seu conhecimento em um método lucrativo,com uma oferta
+                  irresistível.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-5 col-md-5 col-lg-2">
+            <div class="card border-warning text-white bg-black card-small">
+              <div class="card-header border-warning  text-dark fw-bold p-2 " style="background-color: #d4af37;">PILAR
+                3:
+              </div><br>
+              <div class="card-body p-2">
+                <h6 class="card-title">PROSPECÇÃO E VENDAS</h6><br>
+                <p class="card-text small">Crie um modelo replicável e escalável, faturando alto sem precisar vender
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-5 col-md-5 col-lg-2">
+            <div class="card border-warning text-white bg-black card-small">
+              <div class="card-header border-warning  text-dark fw-bold p-2" style="background-color: #d4af37;">PILAR
+                4:
+              </div>
+              <div class="card-body p-2">
+                <h6 class="card-title">ESCALA E GESTÃO</h6><br>
+                <p class="card-text small">Crie um modelo replicável escalável, faturando alto semprecisar vender
+                  manualmente</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Card 2 -->
-      <div class="col-5 col-md-5 col-lg-2">
-        <div class="card border-warning text-white bg-black card-small">
-          <div class="card-header border-warning  text-dark fw-bold p-2" style="background-color: #d4af37;">PILAR 2:</div>
-          <div class="card-body p-2">
-            <h6 class="card-title">OFERTA IRRESISTÍVEL</h6><br>
-            <p class="card-text small">Transforme seu conhecimento em um método lucrativo,com uma oferta irresistível.</p>
-          </div>
-        </div>
-      </div>
+    </div>
 
-      <!-- Card 3 -->
-      <div class="col-5 col-md-5 col-lg-2">
-        <div class="card border-warning text-white bg-black card-small">
-          <div class="card-header border-warning  text-dark fw-bold p-2 " style="background-color: #d4af37;">PILAR 3:</div><br>
-          <div class="card-body p-2">
-            <h6 class="card-title">PROSPECÇÃO E VENDAS</h6>
-            <p class="card-text small">Crie um modelo replicável e escalável, faturando alto sem precisar vender</p>
-          </div>
-        </div>
-      </div>
+    <div id="carouselExampleControls" class="carousel slide">
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <div class="col-lg-12 wow fadeInLeft" 0.8>
 
-      <!-- Card 4 -->
-      <div class="col-5 col-md-5 col-lg-2">
-        <div class="card border-warning text-white bg-black card-small">
-          <div class="card-header border-warning  text-dark fw-bold p-2" style="background-color: #d4af37;">PILAR 4:</div>
-          <div class="card-body p-2">
-            <h6 class="card-title">ESCALA E GESTÃO</h6><br>
-            <p class="card-text small">Crie um modelo replicável  escalável, faturando alto semprecisar vender manualmente</p>
+            <div class="card border-warning text-white bg-black card-small">
+              <div class="card-header border-warning  text-dark fw-bold p-2" style="background-color: #d4af37;">PILAR
+                1:
+              </div>
+              <div class="card-body p-2">
+                <h6 class="card-title">POSICIONAMENTO </h6><br><br>
+                <p class="card-text small">Defina sua persona,sua promessa e se torne referência no seu nicho..</p>
+              </div>
+            </div>
+
           </div>
         </div>
+        <div class="carousel-item">
+          <div class="col-lg-12 wow fadeInLeft" 0.8>
+
+            <div class="card border-warning text-white bg-black card-small">
+              <div class="card-header border-warning  text-dark fw-bold p-2" style="background-color: #d4af37;">PILAR
+                2:
+              </div>
+              <div class="card-body p-2">
+                <h6 class="card-title">OFERTA IRRESISTÍVEL</h6><br>
+                <p class="card-text small">Transforme seu conhecimento em um método lucrativo,com uma oferta
+                  irresistível.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-lg-12 wow fadeInLeft" 0.5>
+
+            <div class="card border-warning text-white bg-black card-small">
+              <div class="card-header border-warning  text-dark fw-bold p-2" style="background-color: #d4af37;">PILAR
+                3:
+              </div>
+              <div class="card-body p-2">
+                <h6 class="card-title">PROSPECÇÃO E VENDAS</h6><br>
+                <p class="card-text small">Crie um modelo replicável e escalável, faturando alto sem precisar vender
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="col-lg-12 wow fadeInLeft" 0.8>
+
+            <div class="card border-warning text-white bg-black card-small">
+              <div class="card-header border-warning  text-dark fw-bold p-2" style="background-color: #d4af37;">PILAR
+                4:
+              </div>
+              <div class="card-body p-2">
+                <h6 class="card-title">ESCALA E GESTÃO</h6><br>
+                <p class="card-text small">Crie um modelo replicável escalável, faturando alto semprecisar vender
+                  manualmente</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+
+    </div>
+
+
+
+
+    <!-- Botão -->
+    <div class="text-center mt-4 ">
+      <button id="showFormButton btn-3" class="btn  px-4 py-2 btn-smaller" data-bs-toggle="modal"
+        data-bs-target="#formModal">Quero Aplicar Agora</button>
+    </div>
+
+    <!-- Informações adicionais -->
+    <div class="text-center mt-3">
+      <p class="text-white"  style="font-size: 14px;">
+        <i class="bi bi-lock-fill text-warning"></i> Seus dados estarão seguros e 100% protegidos.
+      </p><br><br>
+      <div class="container">
+        <hr class="gradient-line my-0">
       </div>
     </div>
-  </div>
-
-  <!-- Botão -->
-  <div class="text-center mt-4">
-    <button id="showFormButton btn-3" class="btn  px-4 py-2 ">Quero Aplicar Agora</button>
-  </div>
-
-  <!-- Informações adicionais -->
-  <div class="text-center mt-3">
-    <p class="text-white">
-      <i class="bi bi-lock-fill text-warning"></i> Seus dados estarão seguros e 100% protegidos.
-    </p>
-    <div class="container">
-      <hr class="gradient-line my-0">
-    </div>
-  </div>
-</section>
+  </section>
 
 
 
   <section id="secao-4">
     <p class="text">A HPM VAI TE AJUDAR EM TODOS QUESITOS<br>
-      SABE O QUE ISSO SIGNIFICA PARA VOCÊ?</p>
+      SABE O QUE ISSO SIGNIFICA PARA VOCÊ?</p><br>
 
     <div class="container text-center" id="card-text">
       <div class=" row justify-content-center">
@@ -275,9 +425,11 @@
           <div>
 
           </div>
-          <button id="showFormButton  btn-3" class="btn btn-custom  ">quero aplicar agora</button>
+          <button id="showFormButton  btn-3" class="btn btn-custom  btn-smaller" data-bs-toggle="modal"
+            data-bs-target="#formModal">quero aplicar agora</button>
 
-          <p class="text-white" style="margin-top: 10px;"> <i class="bi bi-lock-fill" style="color: goldenrod;"></i>seus dados estarão
+          <p class="text-white" style="margin-top: 10px; font-size: 14px;"> <i class="bi bi-lock-fill" style="color: goldenrod;"></i>seus
+            dados estarão
             seguros e 100%
             protegidos</p>
         </div>
@@ -317,8 +469,9 @@
           <div class="col-md-3 mb-4 mb-md-0">
             <h5 class="text-white">Nosso consultor vai te ligar!</h5>
             <p class="text-white" class="mb-3">Ligaremos do DDD 17</p>
-            <button class="btn  text-black" style="border-radius: 20px; background-color: #46c254;"><i
-                class="bi bi-headphones"></i>CONSULTOR ON-LINE</button>
+            <button class="btn  text-black btn-smaller" style="border-radius: 20px; background-color: #46c254;"
+              data-bs-toggle="modal" data-bs-target="#formModal"><i class="bi bi-headphones"></i>CONSULTOR
+              ON-LINE</button>
           </div>
 
           <!-- Bloco 4: Horário de Atendimento -->
@@ -340,10 +493,26 @@
     </footer>
   </section>
   </div>
-
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.bundle.min.js"></script>
+
+
+
+  <script>
+    // Verifica se está no modo mobile
+    if (window.matchMedia("(max-width: 790px)").matches) {
+      $('#carouselExampleControls').carousel({
+        interval: false // Desativa a mudança automática no modo mobile
+      });
+    }
+  </script>
+
 </body>
 
 </html>

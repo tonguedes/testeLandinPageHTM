@@ -10,6 +10,7 @@ body {
     margin: 0;
     background-color: #000;
     padding: 0;
+
 }
 
 .navbar {
@@ -19,11 +20,13 @@ body {
 /* Seção 1 */
 #secao-1 {
     background-image: url(../img/Camada\ 2.png);
-    height: 90vh;
+    height: 100vh;
+    background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    background-position: center right;
 
     padding: 20px;
 }
@@ -116,6 +119,9 @@ button:hover {
     justify-content: center;
     padding: 20px;
     text-align: center;
+    background-position: center center;
+    
+
 }
 
 /* titulo parte 2 */
@@ -131,7 +137,7 @@ button:hover {
 
 .timeline {
     position: relative;
-    padding: 50px 0;
+    padding: -10px 0;
 }
 
 .timeline::before {
@@ -230,9 +236,10 @@ button:hover {
 
 /* Seção 3 */
 #secao-3 {
-
+    min-height: 100vh;
     padding: 20px;
     text-align: center;
+    background-color: #000;
 }
 
 
@@ -312,6 +319,10 @@ textos do card-4 */
     min-height: 80vh;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+
 }
 
 #secao-5>div>div>div:nth-child(1)>p:nth-child(3) {
@@ -455,8 +466,8 @@ textos do card-4 */
 
 @media (max-width: 480px) {
     #showFormButton {
-        height: 45px;
-        font-size: 12px;
+        height: 40px;
+        font-size: 10px;
         margin-left: 4%;
     }
 
@@ -465,13 +476,13 @@ textos do card-4 */
     }
 
 
-  #container-1>div>div.col-12.col-md-6.img-fluid>div>img {
+    #container-1>div>div.col-12.col-md-6.img-fluid>div>img {
         width: 340px;
-        height: 250px;
+        height: 300px;
         align-items: center;
 
     }
-        
+
 
 
     #linha-1 {
@@ -494,6 +505,168 @@ textos do card-4 */
     /* textos da seção -2 */
     body>div>div>div:nth-child(1)>div.col-md-5.left>div>p {
         font-size: 15px;
+        margin-left: 6%;
+    }
+
+    body>div>div>div:nth-child(1)>div.col-md-5.left>div>h4 {
+        margin-left: 6%;
+    }
+
+    body>div>div>div:nth-child(2)>div.col-md-5.right>div>p {
+        font-size: 15px;
+        margin-left: 6%;
+    }
+
+    body>div>div>div:nth-child(2)>div.col-md-5.right>div>h4 {
+        margin-left: 6%;
+    }
+
+    .timeline-dot {
+        margin-left: -1%;
+    }
+
+    .timeline-item {
+        margin-left: 1%;
+    }
+
+    /* fim dos textos da secao-2 */
+
+    #text-monetize {
+        font-size: 15px;
+    }
+
+    .card {
+        padding: 10px;
+        font-size: 14px;
+        width: 90%;
+        /* Ajuste conforme necessário */
+        margin: 10px auto;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+
+    #tamanho-mobile {
+        width: 400px;
+        height: 190px;
+    }
+
+    /* font-size texto-2 */
+
+
+    #secao-5>div>div>div:nth-child(1)>h1 {
+        font-size: 20px !important;
+        text-align: center;
+    }
+
+    /* titulo secao-2o-2 */
+    #secao-2>p {
+        font-size: 22px;
+    }
+
+    #secao-3>p {
+        font-size: 22px;
+    }
+
+    /* titulo secao-4 */
+    #secao-4>p {
+        font-size: 22px;
+    }
+
+    #secao-3>p {
+        font-size: 15px !important;
+    }
+
+
+    #secao-4>p {
+        font-size: 15px !important;
+    }
+
+
+
+    #secao-1>div>div>div:nth-child(1)>h1 {
+        font-size: 22px;
+    }
+
+    #showFormButton {
+        font-size: 20px;
+        margin-left: 7% !important;
+    }
+
+    #secao-1 {
+        height: -100vh !important;
+    }
+
+
+    #secao-5>div:nth-child(1)>div>div:nth-child(1)>p:nth-child(6) {
+        margin-left: 6%;
+    }
+
+    #secao-5>div:nth-child(1)>div>div.col-12.col-md-6.img-fluid>img {
+
+        height: auto;
+
+    }
+
+
+}
+
+@media (max-width: 360px) {
+    #showFormButton {
+        font-size: 10px;
+        height: 40px;
+    }
+
+    #container-1>div>div.col-12.col-md-6.img-fluid>div>img {
+        width: 500px;
+        height: 400px;
+        align-items: center;
+
+    }
+
+    #showFormButton {
+        height: 45px;
+        font-size: 12px;
+        margin-left: 4%;
+    }
+
+    #secao-2>h2 {
+        font-size: 10px;
+    }
+
+
+    #container-1>div>div.col-12.col-md-6.img-fluid>div>img {
+        width: 340px;
+        height: 300px;
+        align-items: center;
+
+    }
+
+
+
+
+    #linha-1 {
+        margin-top: 20% !important;
+    }
+
+
+    #secao-5>div>div>div:nth-child(1)>p:nth-child(3) {
+        font-size: 22px;
+    }
+
+    body>div>h2 {
+        font-size: 17px;
+    }
+
+    #container-1>div>div:nth-child(1)>h1 {
+        font-size: 20px !important;
+    }
+
+    /* textos da seção -2 */
+    body>div>div>div:nth-child(1)>div.col-md-5.left>div>p {
+        font-size: 10px;
         margin-left: 6%;
     }
 
@@ -592,19 +765,68 @@ textos do card-4 */
         margin-left: 6%;
     }
 
+    #secao-5>div:nth-child(1)>div>div.col-12.col-md-6.img-fluid>img {
+
+        height: auto;
+
+    }
+
+    .timeline::before {
+        left: 10%;
+    }
+
+    .timeline-step .content {
+        width: 70%;
+        height: 20%;
+        left: 10%;
+    }
+
+    .timeline-step::before {
+        left: 10%;
+        transform: translateX(5);
+    }
+
+
+    #secao-5>div>div>div.col-12.col-md-6.img-fluid>img {
+        width: 300px;
+        height: 200px;
+        margin-left: 6%;
+    }
+
+    div.timeline-item:nth-child(1)>div:nth-child(1)>div:nth-child(1)>p:nth-child(2) {
+        font-size: px;
+    }
+}
+
+
+/* fomulario prennchimento */
+
+
+.form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+h2 {
+    color: #0e0d0d;
+    margin-bottom: 8%;
 
 }
 
-@media (max-width: 360px) {
-    #showFormButton {
-        font-size: 10px;
-        height: 40px;
-    }
 
-        #container-1>div>div.col-12.col-md-6.img-fluid>div>img {
-             width: 340px;
-             height: 300px;
-             align-items: center;
-    
-         }
+
+.form-control {
+    border: 1px solid black;
+    /* Borda preta nos inputs */
+}
+
+#formModal>div>div>button {
+    padding: 8px 16px;
+    /* Botão menor */
+    font-size: 14px;
 }
