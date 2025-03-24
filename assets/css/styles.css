@@ -128,7 +128,7 @@ button:hover {
 #secao-2>p {
     text-transform: uppercase;
     color: goldenrod;
-    font-size: 30px;
+    font-size: 20px;
 
 }
 
@@ -315,7 +315,7 @@ textos do card-4 */
 
 /* Seção 5 */
 #secao-5 {
-    background-image: url(/HPM_novo2/HPM_novo/assets/img/Camada\ 2.png);
+    background-image: url(/assets/img/Camada\ 2.png);
     min-height: 80vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -472,13 +472,14 @@ textos do card-4 */
     }
 
     #secao-2>h2 {
-        font-size: 15px;
+        font-size: 18px;
+        margin-top: 5%;
     }
 
 
     #container-1>div>div.col-12.col-md-6.img-fluid>div>img {
-        width: 340px;
-        height: 300px;
+        width: 320px;
+        height: 250px;
         align-items: center;
 
     }
@@ -636,10 +637,11 @@ textos do card-4 */
         font-size: 10px;
     }
 
+      
 
     #container-1>div>div.col-12.col-md-6.img-fluid>div>img {
-        width: 340px;
-        height: 300px;
+        width: 300px;
+        height: 250px;
         align-items: center;
 
     }
